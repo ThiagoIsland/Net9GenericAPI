@@ -10,12 +10,12 @@ namespace GenericAPI.API.Controllers;
 
 public class ValuesController : ControllerBase
 {
-    // private readonly BaseContext _context;
-    //
-    // public ValuesController(BaseContext baseContext)
-    // {
-    //     _context = baseContext;
-    // }
+    private readonly BaseContext _context;
+    
+    public ValuesController(BaseContext baseContext)
+    {
+        _context = baseContext;
+    }
     
     // GET: api/values
     [HttpGet]
@@ -25,10 +25,10 @@ public class ValuesController : ControllerBase
     }
     
     
-    // [HttpGet("teste")]
-    // public IActionResult GetBancoTest()
-    // {
-    //     var test = _context.Database.CanConnect();
-    //     return Content($"Conexão com o banco: {test}");
-    // }
+    [HttpGet("teste")]
+    public IActionResult GetBancoTest()
+    {
+        var test = _context.Database.CanConnect();
+        return Content($"Conexão com o banco: {test}");
+    }
 }

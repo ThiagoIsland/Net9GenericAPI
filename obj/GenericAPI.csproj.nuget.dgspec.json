@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj": {}
+    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj": {}
   },
   "projects": {
-    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj": {
+    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj",
-        "projectName": "GenericAPI",
-        "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj",
+        "projectUniqueName": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj",
+        "projectName": "genericapi",
+        "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj",
         "packagesPath": "/Users/thiagoalessandro/.nuget/packages/",
         "outputPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/obj/",
         "projectStyle": "PackageReference",

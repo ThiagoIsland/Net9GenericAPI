@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("GenericAPI")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("genericapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+700b11a907867ab42c206f7ba188e85e90009d3e")]
-[assembly: System.Reflection.AssemblyProductAttribute("GenericAPI")]
-[assembly: System.Reflection.AssemblyTitleAttribute("GenericAPI")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdee6fa6045116b41217c1017ff36a85eb529582")]
+[assembly: System.Reflection.AssemblyProductAttribute("genericapi")]
+[assembly: System.Reflection.AssemblyTitleAttribute("genericapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
