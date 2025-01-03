@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql" Version="9.0.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Core\" />
+    <None Remove="Application\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net9.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net9.0\appsettings.json" />
+    <Content Include="bin\Debug\net9.0\AutoMapper.dll" />
+    <Content Include="bin\Debug\net9.0\FluentValidation.dll" />
+    <Content Include="bin\Debug\net9.0\GenericAPI" />
+    <Content Include="bin\Debug\net9.0\GenericAPI.deps.json" />
+    <Content Include="bin\Debug\net9.0\GenericAPI.dll" />
+    <Content Include="bin\Debug\net9.0\GenericAPI.pdb" />
+    <Content Include="bin\Debug\net9.0\GenericAPI.runtimeconfig.json" />
+    <Content Include="bin\Debug\net9.0\GenericAPI.staticwebassets.endpoints.json" />
+    <Content Include="bin\Debug\net9.0\MediatR.Contracts.dll" />
+    <Content Include="bin\Debug\net9.0\MediatR.dll" />
+    <Content Include="bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll" />
+    <Content Include="bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll" />
+    <Content Include="bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll" />
+    <Content Include="bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="bin\Debug\net9.0\Microsoft.OpenApi.dll" />
+    <Content Include="bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll" />
+    <Content Include="bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <Content Include="bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <Content Include="bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="obj\GenericAPI.csproj.nuget.dgspec.json" />
+    <Content Include="obj\GenericAPI.csproj.nuget.g.props" />
+    <Content Include="obj\GenericAPI.csproj.nuget.g.targets" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\project.nuget.cache" />
+    <Content Include="obj\project.packagespec.json" />
+    <Content Include="obj\rider.project.model.nuget.info" />
+    <Content Include="obj\rider.project.restore.info" />
+  </ItemGroup>
+</Project>
