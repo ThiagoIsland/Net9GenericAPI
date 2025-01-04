@@ -6,7 +6,7 @@ using GenericAPI.Core.Entities;
 namespace GenericAPI.API.Controllers;
 
 [ApiController]
-[Route("api/Controller")]
+[Route("api/[controller]/[action]")]
 
 public class GenericController : ControllerBase
 {
@@ -18,20 +18,29 @@ public class GenericController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Pessoa>>> GetUsers()
+    public async Task<ActionResult<IEnumerable<Pessoa>>> GetTodasPessoas()
     {
-        return Ok(_genericService.GetAllUsersAsync);
+        var pessoas = await _genericService.GetAllUsersAsync(); 
+        return Ok(pessoas);
     }
 
-    [HttpGet("{id}")]
-    public async Task<ActionResult<Pessoa>> GetUser(int id)
+    [HttpGet]
+    public async Task<ActionResult<Pessoa>> GetPessoaById(int id)
     {
         var pessoa = await _genericService.GetUserByIdAsync(id);
         if (pessoa == null)
         {
             return NotFound("Sem usuário com esse ID");
         }
-        return (pessoa);
 
+        return (pessoa);
     }
+    
+    [HttpPost]
+    public async Task<ActionResult<Pessoa>> AdicionarPessoar([FromBody] Pessoa pessoa)
+    {
+        await _genericService.AddUserAsync(pessoa.IdPessoa, pessoa.Name, pessoa.Email);
+        return Content("Usuário Adicionado com Sucesso");
+    }
+
 }

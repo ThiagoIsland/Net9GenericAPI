@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("genericapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdee6fa6045116b41217c1017ff36a85eb529582")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b0a5fa8a127cb629d3ff790f19fb114774825c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("genericapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("genericapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

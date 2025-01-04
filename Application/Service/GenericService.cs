@@ -23,11 +23,19 @@ public class GenericService : IGenericService
         return await _baseContext.Pessoas.FirstOrDefaultAsync(p => p.Id == id);
     }
 
-    public async Task AddUserAsync(Pessoa? pessoa)
+    public async Task AddUserAsync(int idPessoa, string? name, string? email)
     {
-        if (pessoa == null) throw new ArgumentNullException(nameof(pessoa));
-        await _baseContext.Pessoas.AddAsync(pessoa);
-        await _baseContext.SaveChangesAsync();
+        // if (pessoa == null) throw new ArgumentNullException(nameof(pessoa));
+        var pessoa = new Pessoa
+        {
+            IdPessoa = idPessoa,
+            Name = name,
+            Email = email,
+            CreatedAt = DateTime.UtcNow
+        };
+
+    await _baseContext.Pessoas.AddAsync(pessoa);
+    await _baseContext.SaveChangesAsync();
     }
 
     public async Task UpdateUserAsync(Pessoa? pessoa)

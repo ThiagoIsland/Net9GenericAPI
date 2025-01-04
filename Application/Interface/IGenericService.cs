@@ -6,7 +6,7 @@ public interface IGenericService
 {
     Task<IEnumerable<Pessoa>> GetAllUsersAsync();
     Task<Pessoa?> GetUserByIdAsync(int id);
-    Task AddUserAsync(Pessoa? pessoa);
+    Task AddUserAsync(int idPessoa, string? name, string? email);
     Task UpdateUserAsync(Pessoa? pessoa);
     Task DeleteUserAsync(int id);
 }

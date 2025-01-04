@@ -7,8 +7,8 @@ namespace GenericAPI.Core.Entities;
 public class Pessoa
 {
     [Key]
-    public int Id { get; set; }
-    public int IdPessoa { get; set; }
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int Id { get; set; }    public int IdPessoa { get; set; }
     [Required]
     public string? Name { get; set; }
     [EmailAddress]
