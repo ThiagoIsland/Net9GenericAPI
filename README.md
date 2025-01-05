@@ -38,7 +38,7 @@ The API adheres to Clean Architecture principles:
 
 # Things I still pretend to implement:
 
-•⁠  ⁠~~Other CRUD methods (Add User/Pessoa, Edit User/Pessoa, Remove User/Pessoa) and Dependecy Injection~~
+•⁠  ⁠~~Other CRUD methods (Add User/Pessoa, Edit User/Pessoa, Remove User/Pessoa) and Dependency Injection~~
 
 •⁠  ⁠Repository Layer and all others principles and concepts who makes this API be Clean ARCH
 

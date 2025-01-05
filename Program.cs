@@ -1,12 +1,12 @@
+using GenericAPI;
 using GenericAPI.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using GenericAPI.Application;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddScoped<IGenericService, GenericService>();
 
-builder.Services.AddDbContext<BaseContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.RegisterServices(builder.Configuration);
+
 builder.WebHost.UseUrls("http://localhost:5155");
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
