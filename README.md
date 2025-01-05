@@ -40,7 +40,7 @@ The API adheres to Clean Architecture principles:
 
 •⁠  ⁠~~Other CRUD methods (Add User/Pessoa, Edit User/Pessoa, Remove User/Pessoa) and Dependency Injection~~
 
-•⁠  ⁠Repository Layer and all others principles and concepts who makes this API be Clean ARCH
+•⁠  ⁠~~Repository Layer and all others principles and concepts who makes this API be Clean ARCH~~
 
 •⁠  ⁠Prometheus.NET and OpenTelemetry for observability, metrics collection and the API perfomance
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5SpEQxmCekU=",
+  "dgSpecHash": "pcjCevwJ0+k=",
   "success": true,
-  "projectFilePath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj",
+  "projectFilePath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj",
   "expectedPackageFiles": [
     "/Users/thiagoalessandro/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/thiagoalessandro/.nuget/packages/entityframework/6.5.1/entityframework.6.5.1.nupkg.sha512",

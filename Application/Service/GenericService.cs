@@ -1,5 +1,7 @@
 using GenericAPI.Infrastructure.Data;
 using GenericAPI.Core.Entities;
+using GenericAPI.Core.Repository;
+using GenericAPI.Infrastructure.Repository;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,20 +10,20 @@ namespace GenericAPI.Application;
 
 public class GenericService : IGenericService
 {
-    private readonly BaseContext _baseContext;
+    private readonly IGenericRepository _genericRepository;
 
-    public GenericService(BaseContext baseContext)
+    public GenericService(IGenericRepository genericRepository)
     {
-        _baseContext = baseContext;
+        _genericRepository = genericRepository;
     }
-    public async Task<IEnumerable<Pessoa>> GetAllUsersAsync()
+    public async Task<IEnumerable<Pessoa?>> GetAllUsersAsync()
     {
-        return await _baseContext.Pessoas.ToListAsync();
+        return await _genericRepository.GetAllUsersAsync();
     }
 
     public async Task<Pessoa?> GetUserByIdAsync(int id)
     {
-        return await _baseContext.Pessoas.FirstOrDefaultAsync(p => p.Id == id);
+        return await _genericRepository.GetUserByIdAsync(id);
     }
 
     public async Task AddUserAsync(int idPessoa, string? name, string? email)
@@ -35,39 +37,23 @@ public class GenericService : IGenericService
             CreatedAt = DateTime.UtcNow
         };
 
-    await _baseContext.Pessoas.AddAsync(pessoa);
-    await _baseContext.SaveChangesAsync();
+        await _genericRepository.AddUserAsync(pessoa);
     }
 
     public async Task<Pessoa?> UpdateUserAsync(int id, int idPessoa, string? name, string? email)
     {
-        var pessoa = await _baseContext.Pessoas.FindAsync(id);
-        
-        if (pessoa == null)
+        var pessoa = new Pessoa
         {
-            return null; 
-        }
-
-        pessoa.IdPessoa = idPessoa;
-        pessoa.Name = name;
-        pessoa.Email = email;    
+            IdPessoa = idPessoa,
+            Name = name,
+            Email = email
+        };
             
-        _baseContext.Pessoas.Update(pessoa);
-        await _baseContext.SaveChangesAsync();
-
-        return pessoa;
+        return await _genericRepository.UpdateUserAsync(pessoa);
     }
 
     public async Task<bool> DeleteUserAsync(int id)
     {
-        var pessoa = await _baseContext.Pessoas.FindAsync(id);
-        if (pessoa == null)
-        {
-            return false;
-        }
-        _baseContext.Pessoas.Remove(pessoa);
-        await _baseContext.SaveChangesAsync();
-        
-        return true;
+        return await _genericRepository.DeleteUserAsync(id);
     }
 }

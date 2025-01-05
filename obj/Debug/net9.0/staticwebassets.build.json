@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "k5VHRVKKzKPsDeuBA7pW7L71OjDoBZzjM6dZPuMyljY=",
-  "Source": "genericapi",
-  "BasePath": "_content/genericapi",
+  "Hash": "4EMD2Opusgdi7qYJ0iZJIscQbCOVkW8lMSCL5ZxyAXE=",
+  "Source": "GenericAPI",
+  "BasePath": "_content/GenericAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
