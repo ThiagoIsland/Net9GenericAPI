@@ -13,6 +13,12 @@ public class BaseContext : DbContext
         modelBuilder.Entity<Pessoa>()
             .ToTable("Pessoas")
             .HasKey(p => p.Id);
+        
+        modelBuilder.Entity<Pessoa>()
+            .Property(u => u.CreatedAt)
+            .ValueGeneratedOnAdd()
+            .Metadata.SetAfterSaveBehavior(Microsoft.EntityFrameworkCore.Metadata.PropertySaveBehavior.Ignore);
+
     }
    public DbSet<Pessoa> Pessoas { get; set; }
 }

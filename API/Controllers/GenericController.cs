@@ -43,4 +43,29 @@ public class GenericController : ControllerBase
         return Content("Usuário Adicionado com Sucesso");
     }
 
+    [HttpPut]
+    public async Task<IActionResult> UpdatePessoa(int id, [FromBody] Pessoa pessoa)
+    {
+        var updatedUser = await _genericService.UpdateUserAsync(id, pessoa.IdPessoa, pessoa.Name, pessoa.Email);
+
+        if (updatedUser == null)
+        {
+            return NotFound($"The ID: {id} was not found.");
+        }
+
+        return Ok(updatedUser);
+    }
+
+    [HttpDelete]
+    public async Task<IActionResult> DeletarPessoa(int id)
+    {
+        var isDeleted = await _genericService.DeleteUserAsync(id);
+
+        if (!isDeleted)
+        {
+            return NotFound($"User with ID {id} not found.");
+        }
+
+        return NoContent();
+    }
 }
