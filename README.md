@@ -32,16 +32,21 @@ The API adheres to Clean Architecture principles:
 
 - **.NET 9 SDK**: [Download .NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) (Direct Download)
 ```bash
-Windows: winget install Microsoft.DotNet.SDK.9
-Windows: choco install dotnet-sdk
-
-Linux - Ubuntu/Debian: 
+Linux - Ubuntu/Debian
 wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y dotnet-sdk-9.0
-
-MacOS: brew install --cask dotnet-sdk
+```
+```bash
+MacOS 
+  brew install --cask dotnet-sdk
+```
+```bash
+Windows
+  winget install Microsoft.DotNet.SDK.9
+  or
+  choco install dotnet-sdk
 ```
 - **PostgreSQL**(Version 12+): [Download PostgreSQL](https://www.postgresql.org/download/)
 
