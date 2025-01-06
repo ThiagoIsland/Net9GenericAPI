@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj": {}
+    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj": {}
   },
   "projects": {
-    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj": {
+    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj",
-        "projectName": "GenericAPI",
-        "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj",
+        "projectUniqueName": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj",
+        "projectName": "genericapi",
+        "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj",
         "packagesPath": "/Users/thiagoalessandro/.nuget/packages/",
         "outputPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/obj/",
         "projectStyle": "PackageReference",
@@ -89,6 +89,26 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "OpenTelemetry.Api": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            },
+            "OpenTelemetry.Exporter.Prometheus": {
+              "target": "Package",
+              "version": "[1.3.0-rc.2, )"
+            },
+            "OpenTelemetry.Exporter.Prometheus.AspNetCore": {
+              "target": "Package",
+              "version": "[1.10.0-beta.1, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.10.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
