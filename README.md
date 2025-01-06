@@ -6,25 +6,25 @@ The repository can be used as a template for other projects requiring a structur
 
 # Technologies Used
 
-•⁠  ⁠.NET 9.0: The latest version of the .NET framework for back-end development.
+•⁠  ⁠.NET 9.0
 
-•⁠  ⁠Entity Framework Core: ORM for database access.
+•⁠  ⁠Entity Framework Core
 
-•⁠  ⁠PostgreSQL: A robust and open-source relational database system.
+•⁠  ⁠PostgreSQL
 
-•⁠  ⁠MediatR: Simplifies communication between layers with request/response and pipeline behaviors.
+•⁠  ⁠AutoMapper, MediatR, FluentValidation, Npgsql, Swagger/Swashbuckle
 
-•⁠  ⁠FluentValidation: Simplifies input validation for requests.
+•⁠  ⁠Prometheus, OpenTelemetry
 
 # Architecture
 
 The API adheres to Clean Architecture principles:
 
-•⁠  ⁠Domain Layer: Contains the core logic and entities.
+•⁠  ⁠Domain/Core Layer: Contains the core logic and entities.
 
 •⁠  ⁠Application Layer: Handles use cases, DTOs, and business rules.
 
-•⁠  ⁠Infrastructure Layer: Database access, repositories, and external services.
+•⁠  ⁠Infrastructure/Infra Layer: Database access, repositories, and external services.
 
 •⁠  ⁠API Layer: Exposes endpoints and manages incoming requests.
 
@@ -36,12 +36,29 @@ The API adheres to Clean Architecture principles:
 
 •⁠  ⁠IDE: Visual Studio, Rider, or VS Code (Personally, I prefer to use Rider or Visual Studio).
 
+•⁠  ⁠Prometheus:
+
+    
+```bash
+  Linux
+    Ubuntu/Others + SNAP: sudo snap install prometheus
+    Fedora: sudo dnf install prometheus
+ ```
+```bash
+  MacOS
+    brew install Prometheus
+ ```
+```bash
+  Windows + Chocolatey
+    choco install prometheus
+ ```
+
 # Things I still pretend to implement:
 
 •⁠  ⁠~~Other CRUD methods (Add User/Pessoa, Edit User/Pessoa, Remove User/Pessoa) and Dependency Injection~~
 
 •⁠  ⁠~~Repository Layer and all others principles and concepts who makes this API be Clean ARCH~~
 
-•⁠  ⁠Prometheus.NET and OpenTelemetry for observability, metrics collection and the API perfomance
+•⁠  ⁠~~Prometheus.NET and OpenTelemetry for observability, metrics collection and the API perfomance~~
 
 •⁠  ⁠Polly: A library that improves resiliency to your appliaction aplying strategies like Circuit Breaker, Retry, Timeout, etc...
