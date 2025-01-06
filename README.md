@@ -6,38 +6,55 @@ The repository can be used as a template for other projects requiring a structur
 
 # Technologies Used
 
-•⁠  ⁠.NET 9.0
+- **.NET 9.0**
 
-•⁠  ⁠Entity Framework Core
+- **Entity Framework Core**
 
-•⁠  ⁠PostgreSQL
+- **PostgreSQL**
 
-•⁠  ⁠AutoMapper, MediatR, FluentValidation, Npgsql, Swagger/Swashbuckle
+- **AutoMapper, MediatR, FluentValidation, Npgsql, Swagger/Swashbuckle**
 
-•⁠  ⁠Prometheus, OpenTelemetry
+- **Prometheus, OpenTelemetry**
 
 # Architecture
 
 The API adheres to Clean Architecture principles:
 
-•⁠  ⁠Domain/Core Layer: Contains the core logic and entities.
+- **Domain/Core Layer**: Contains the core logic and entities.
 
-•⁠  ⁠Application Layer: Handles use cases, DTOs, and business rules.
+- **Application Layer**: Handles use cases, DTOs, and business rules.
 
-•⁠  ⁠Infrastructure/Infra Layer: Database access, repositories, and external services.
+- **nfrastructure/Infra Layer**: Database access, repositories, and external services.
 
-•⁠  ⁠API Layer: Exposes endpoints and manages incoming requests.
+- **API Layer**: Exposes endpoints and manages incoming requests.
 
 # Pre-requisites
 
-•⁠  ⁠.NET 9 SDK
+- **.NET 9 SDK**: [Download .NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) (Direct Download)
+```bash
+Windows: winget install Microsoft.DotNet.SDK.9
+Windows: choco install dotnet-sdk
 
-•⁠  ⁠PostgreSQL: Version 12+
+Linux - Ubuntu/Debian: 
+wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt update
+sudo apt install -y dotnet-sdk-9.0
 
-•⁠  ⁠IDE: Visual Studio, Rider, or VS Code (Personally, I prefer to use Rider or Visual Studio).
+MacOS: brew install --cask dotnet-sdk
+```
+- **PostgreSQL**(Version 12+): [Download PostgreSQL](https://www.postgresql.org/download/)
 
-•⁠  ⁠Prometheus:
 
+- **IDE**: Visual Studio, Rider, or VS Code
+
+    - **Visual Studio**: [Download Visual Studio](https://visualstudio.microsoft.com/downloads/)
+    - **Rider**: [Download Rider](https://www.jetbrains.com/rider/download/)
+    - **VS Code**: [Download VS Code](https://code.visualstudio.com/Download)  
+      (Personally, I prefer to use Rider or Visual Studio).
+  
+
+- **Prometheus**:
     
 ```bash
   Linux
