@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MHMf8C9CTH8=",
-  "success": true,
-  "projectFilePath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj",
+  "dgSpecHash": "UBzxloTTU8Uo70vcOWyvv4AW3sHNye+IqmugkMMCIj38/nGetmDM/H9pkp8UxdOunETN0BSHwVDgAF40h7ARgg==",
+  "success": false,
+  "projectFilePath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj",
   "expectedPackageFiles": [
     "/Users/thiagoalessandro/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/thiagoalessandro/.nuget/packages/entityframework/6.5.1/entityframework.6.5.1.nupkg.sha512",
@@ -104,5 +104,42 @@
     "/Users/thiagoalessandro/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
     "/Users/thiagoalessandro/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 9.0.1 to 9.0.0. Reference the package directly from the project to select a different version. \n GenericAPI -> GenericAPI.Application -> Microsoft.EntityFrameworkCore (>= 9.0.1) \n GenericAPI -> Microsoft.EntityFrameworkCore (>= 9.0.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 9.0.1 to 9.0.0. Reference the package directly from the project to select a different version. \n GenericAPI -> GenericAPI.Core -> Microsoft.EntityFrameworkCore (>= 9.0.1) \n GenericAPI -> Microsoft.EntityFrameworkCore (>= 9.0.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 9.0.1 to 9.0.0. Reference the package directly from the project to select a different version. \n GenericAPI -> GenericAPI.Infra -> Microsoft.EntityFrameworkCore (>= 9.0.1) \n GenericAPI -> Microsoft.EntityFrameworkCore (>= 9.0.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Npgsql.EntityFrameworkCore.PostgreSQL from 9.0.3 to 9.0.2. Reference the package directly from the project to select a different version. \n GenericAPI -> GenericAPI.Infra -> Npgsql.EntityFrameworkCore.PostgreSQL (>= 9.0.3) \n GenericAPI -> Npgsql.EntityFrameworkCore.PostgreSQL (>= 9.0.2)",
+      "libraryId": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

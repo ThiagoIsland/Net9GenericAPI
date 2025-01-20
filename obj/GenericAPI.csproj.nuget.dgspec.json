@@ -1,17 +1,87 @@
 {
   "format": 1,
   "restore": {
-    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj": {}
+    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj": {}
   },
   "projects": {
-    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj": {
+    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Application/GenericAPI.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj",
-        "projectName": "genericapi",
-        "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/genericapi.csproj",
+        "projectUniqueName": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Application/GenericAPI.Application.csproj",
+        "projectName": "GenericAPI.Application",
+        "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Application/GenericAPI.Application.csproj",
         "packagesPath": "/Users/thiagoalessandro/.nuget/packages/",
-        "outputPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/obj/",
+        "outputPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/thiagoalessandro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj": {
+                "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj"
+              },
+              "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Infra/GenericAPI.Infra.csproj": {
+                "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Infra/GenericAPI.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj",
+        "projectName": "GenericAPI.Core",
+        "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj",
+        "packagesPath": "/Users/thiagoalessandro/.nuget/packages/",
+        "outputPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/thiagoalessandro/.nuget/NuGet/NuGet.Config"
@@ -32,13 +102,80 @@
           "warnAsError": [
             "NU1605"
           ]
+        }
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj",
+        "projectName": "GenericAPI",
+        "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.csproj",
+        "packagesPath": "/Users/thiagoalessandro/.nuget/packages/",
+        "outputPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/thiagoalessandro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
         },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Application/GenericAPI.Application.csproj": {
+                "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Application/GenericAPI.Application.csproj"
+              },
+              "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj": {
+                "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj"
+              },
+              "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Infra/GenericAPI.Infra.csproj": {
+                "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Infra/GenericAPI.Infra.csproj"
+              }
+            }
+          }
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -142,6 +279,87 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Infra/GenericAPI.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Infra/GenericAPI.Infra.csproj",
+        "projectName": "GenericAPI.Infra",
+        "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Infra/GenericAPI.Infra.csproj",
+        "packagesPath": "/Users/thiagoalessandro/.nuget/packages/",
+        "outputPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Infra/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/thiagoalessandro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj": {
+                "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

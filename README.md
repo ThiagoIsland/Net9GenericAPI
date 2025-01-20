@@ -40,7 +40,7 @@ sudo apt install -y dotnet-sdk-9.0
 ```
 ```bash
 MacOS 
-  brew install --cask dotnet-sdk
+  brw install --cask dotnet-sdk
 ```
 ```bash
 Windows

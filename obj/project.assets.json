@@ -2003,6 +2003,53 @@
             "rid": "win"
           }
         }
+      },
+      "GenericAPI.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "EntityFramework": "6.5.1",
+          "GenericAPI.Core": "1.0.0",
+          "GenericAPI.Infra": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.1"
+        },
+        "compile": {
+          "bin/placeholder/GenericAPI.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GenericAPI.Application.dll": {}
+        }
+      },
+      "GenericAPI.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "EntityFramework": "6.5.1",
+          "Microsoft.EntityFrameworkCore": "9.0.1"
+        },
+        "compile": {
+          "bin/placeholder/GenericAPI.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GenericAPI.Core.dll": {}
+        }
+      },
+      "GenericAPI.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "EntityFramework": "6.5.1",
+          "GenericAPI.Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.1",
+          "Npgsql": "9.0.2",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.3"
+        },
+        "compile": {
+          "bin/placeholder/GenericAPI.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GenericAPI.Infra.dll": {}
+        }
       }
     }
   },
@@ -5710,6 +5757,21 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "GenericAPI.Application/1.0.0": {
+      "type": "project",
+      "path": "GenericAPI.Application/GenericAPI.Application.csproj",
+      "msbuildProject": "GenericAPI.Application/GenericAPI.Application.csproj"
+    },
+    "GenericAPI.Core/1.0.0": {
+      "type": "project",
+      "path": "GenericAPI.Core/GenericAPI.Core.csproj",
+      "msbuildProject": "GenericAPI.Core/GenericAPI.Core.csproj"
+    },
+    "GenericAPI.Infra/1.0.0": {
+      "type": "project",
+      "path": "GenericAPI.Infra/GenericAPI.Infra.csproj",
+      "msbuildProject": "GenericAPI.Infra/GenericAPI.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5717,6 +5779,9 @@
       "AutoMapper >= 13.0.1",
       "EntityFramework >= 6.5.1",
       "FluentValidation >= 11.11.0",
+      "GenericAPI.Application >= 1.0.0",
+      "GenericAPI.Core >= 1.0.0",
+      "GenericAPI.Infra >= 1.0.0",
       "MediatR >= 12.4.1",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.0",
@@ -5760,20 +5825,24 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Application/GenericAPI.Application.csproj": {
+              "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Application/GenericAPI.Application.csproj"
+            },
+            "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj": {
+              "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Core/GenericAPI.Core.csproj"
+            },
+            "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Infra/GenericAPI.Infra.csproj": {
+              "projectPath": "/Users/thiagoalessandro/Projetos/CleanArchAPI/GenericAPI/GenericAPI.Infra/GenericAPI.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net9.0": {
@@ -5884,5 +5953,43 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 9.0.1 to 9.0.0. Reference the package directly from the project to select a different version. \n GenericAPI -> GenericAPI.Application -> Microsoft.EntityFrameworkCore (>= 9.0.1) \n GenericAPI -> Microsoft.EntityFrameworkCore (>= 9.0.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 9.0.1 to 9.0.0. Reference the package directly from the project to select a different version. \n GenericAPI -> GenericAPI.Core -> Microsoft.EntityFrameworkCore (>= 9.0.1) \n GenericAPI -> Microsoft.EntityFrameworkCore (>= 9.0.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 9.0.1 to 9.0.0. Reference the package directly from the project to select a different version. \n GenericAPI -> GenericAPI.Infra -> Microsoft.EntityFrameworkCore (>= 9.0.1) \n GenericAPI -> Microsoft.EntityFrameworkCore (>= 9.0.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Npgsql.EntityFrameworkCore.PostgreSQL from 9.0.3 to 9.0.2. Reference the package directly from the project to select a different version. \n GenericAPI -> GenericAPI.Infra -> Npgsql.EntityFrameworkCore.PostgreSQL (>= 9.0.3) \n GenericAPI -> Npgsql.EntityFrameworkCore.PostgreSQL (>= 9.0.2)",
+      "libraryId": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

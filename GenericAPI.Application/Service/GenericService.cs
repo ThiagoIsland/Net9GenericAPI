@@ -1,9 +1,5 @@
-using GenericAPI.Infrastructure.Data;
 using GenericAPI.Core.Entities;
 using GenericAPI.Core.Repository;
-using GenericAPI.Infrastructure.Repository;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace GenericAPI.Application;

@@ -37,6 +37,13 @@
   <ItemGroup>
     <None Remove="Core\" />
     <None Remove="Application\" />
+    <None Remove="GenericAPI.Application\**" />
+    <None Remove="Infrastructure\**" />
+    <None Remove="Core\**" />
+    <None Remove="GenericAPI.Core\**" />
+    <None Remove="GenericAPI.Infra\**" />
+    <None Remove="Application\**" />
+    <None Remove="API\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -73,5 +80,50 @@
     <Content Include="obj\project.packagespec.json" />
     <Content Include="obj\rider.project.model.nuget.info" />
     <Content Include="obj\rider.project.restore.info" />
+    <Content Remove="GenericAPI.Application\**" />
+    <Content Remove="Infrastructure\**" />
+    <Content Remove="Core\**" />
+    <Content Remove="GenericAPI.Core\**" />
+    <Content Remove="GenericAPI.Infra\**" />
+    <Content Remove="Application\**" />
+    <Content Remove="API\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="GenericAPI.Application\**" />
+    <Compile Remove="Infrastructure\**" />
+    <Compile Remove="Core\**" />
+    <Compile Remove="GenericAPI.Core\**" />
+    <Compile Remove="GenericAPI.Infra\**" />
+    <Compile Remove="Application\**" />
+    <Compile Remove="API\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="GenericAPI.Application\**" />
+    <EmbeddedResource Remove="Infrastructure\**" />
+    <EmbeddedResource Remove="Core\**" />
+    <EmbeddedResource Remove="GenericAPI.Core\**" />
+    <EmbeddedResource Remove="GenericAPI.Infra\**" />
+    <EmbeddedResource Remove="Application\**" />
+    <EmbeddedResource Remove="API\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="GenericAPI.Application\obj\GenericAPI.Application.csproj.nuget.dgspec.json" />
+    <_ContentIncludedByDefault Remove="GenericAPI.Application\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="GenericAPI.Application\obj\project.packagespec.json" />
+    <_ContentIncludedByDefault Remove="GenericAPI.Core\obj\GenericAPI.Core.csproj.nuget.dgspec.json" />
+    <_ContentIncludedByDefault Remove="GenericAPI.Core\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="GenericAPI.Core\obj\project.packagespec.json" />
+    <_ContentIncludedByDefault Remove="GenericAPI.Infra\obj\GenericAPI.Infra.csproj.nuget.dgspec.json" />
+    <_ContentIncludedByDefault Remove="GenericAPI.Infra\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="GenericAPI.Infra\obj\project.packagespec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="GenericAPI.Application\GenericAPI.Application.csproj" />
+    <ProjectReference Include="GenericAPI.Core\GenericAPI.Core.csproj" />
+    <ProjectReference Include="GenericAPI.Infra\GenericAPI.Infra.csproj" />
   </ItemGroup>
 </Project>

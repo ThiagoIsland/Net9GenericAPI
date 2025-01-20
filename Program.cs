@@ -18,6 +18,7 @@ builder.Services.AddOpenTelemetry()
     .WithMetrics(metrics =>
     {
         metrics.AddPrometheusExporter();
+        
         metrics.AddAspNetCoreInstrumentation();
         metrics.AddMeter("Microsoft.Extension.Hosting", "Microsoft.AspNetCore.Server.Kestrel");
         metrics.AddView("Http.Server.Request.duration", new ExplicitBucketHistogramConfiguration

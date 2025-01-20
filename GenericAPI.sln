@@ -5,6 +5,12 @@ VisualStudioVersion = 25.0.1706.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericAPI", "GenericAPI.csproj", "{C6DC86BF-F9BF-49A3-889F-E8502FFB82E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericAPI.Core", "GenericAPI.Core\GenericAPI.Core.csproj", "{FC2AB4FC-C410-467C-9260-CF4E5288FBFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericAPI.Application", "GenericAPI.Application\GenericAPI.Application.csproj", "{38213353-980D-4ED0-AE16-707B040E5945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericAPI.Infra", "GenericAPI.Infra\GenericAPI.Infra.csproj", "{A0B2E4E5-687B-43B0-BFD0-DB44D39C0BD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 	EndGlobalSection
